@@ -1,0 +1,25 @@
+//print even sum and odd sum & their difference
+#include<stdio.h>
+void main()
+{ 
+  int n,i,ele,evsum=0,odsum=0,diff=0;
+  printf("enter a limit:");
+  scanf("%d",&n);
+  printf("enter elements:");
+  for(i=1;i<=n;i++)
+  { 
+     scanf("%d",&ele);
+     if((ele%2)==0)
+     { 
+        evsum+=ele;
+	 }
+	 else
+	 { 
+	    odsum+=ele;
+	 }
+  }
+  diff=evsum-odsum;
+  printf("\neven sum:%d",evsum);
+  printf("\nodd sum:%d",odsum);
+  printf("\ndifference:%d",diff);
+}
